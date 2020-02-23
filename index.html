@@ -1,0 +1,88 @@
+<!-- General HTML Setup -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Website Metadata -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Nabeel Siddiqui</title>
+
+	<!-- Bootstrap and Custom CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body id="home-top">
+	<div class="container-fluid p-0">
+		<!-- Navigation Bar -->
+		<div id="nav-placeholder"></div>
+	</div>
+	<!-- Hero Image -->
+	<div class="hero mb-5 container-fluid">
+		<div class="hero-text">
+			<p class="display-4 text-uppercase mt-5">Nabeel Siddiqui</p>
+			<h2 style="color:white;" id="subtitle" class="mb-5"></h2>
+			<p class="lead text-center">
+				<a style="border-radius: 8px" class="btn btn-danger btn-md jumbotron_text" href="#" role="button">Contact Me</a>
+			</p>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+		<script type="text/javascript">
+			var typed3 = new Typed('#subtitle', {
+				strings: [
+					'I am a digital humanist...',
+					'I am a digital humanist, media historian...',
+					'I am a digital humanist, media historian, teacher...',
+					'I am a digital humanist, media historian, teacher, instructional designer...',
+					'I am a digital humanist, media historian, teacher, instructional designer, and web developer.',
+				],
+				typeSpeed: 30,
+				backSpeed: 0,
+				smartBackspace: true,
+				loop: false,
+				callback: function() {
+					$(".typed-cursor").hide();
+				}
+			});
+
+		</script>
+	</div>
+	<!-- 2 Column About Me -->
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-lg-6 col-md-6 mb-3">
+				<img class="img-fluid" src="assets/profile.jpg" alt="Picture of Me">
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<h3 class="text-uppercase text-center text-primary">About Me</h3>
+				<p>I am a scholar of digital humanities, the history of information science, communication, new media rhetoric, and science and technology studies. Currently, I am completing a manuscript entitled <em>Byting Out the Public: Personal Computrs and the Private Sphere</em>, which analyzes the the personal computer&#8217;s domestication during the 1970s and 1980s. As popular media and news coverage stress the power of computational technology for political change (the Moldova Civil Unrest, the Iranian Election of 2009, the Tunisian Revolution, and the Egyption Revolution), my work shows that the computer has not historically served as a source of liberation. Instead, it emerged as a reactionary force against the American liberation movement sof the 1960s. I have received financial support from a variety of outlets, including the University of Minnesota&#8217;s Charles Babbage Institute&#8217;s Arthur L. Norberg Grant, MIT Press, and William and Mary&#8217;s Provost Dissertation Fellowship</p>
+				<p>I have also completed a variety of digital humanities projects as both a solo researcher and collaborator, and I have an extremely large working knowledge of many digital humanities tools and methodologies. I specialize in large scale textual analysis and visualization, virtual reality, GIS, digital archives, and alternative publishing platforms. While digital humanities research has focused on historical or literary sources, I have a growing interest in how historians will conduct research on digital culture in the next two decades. As a result, I am generating a series of articles assessing the impact of large-scale data analytical methodologies on qualitative research in computational history. My research has appeared in <i>Gnovis, Digital Humanities Quarterly, Global Horizons, </i>and <em>The Programming Historian</em>.</p>
+				<p>At various points, I have also served as an instructional designer, educational technologist, and freelance web developer. My eclectic interests have recently pushed me in the direction of more artistic and creative endeavors. Specifically, I am interested in generative art and grammar. I am always open to collaborating on projects. If you have an idea, please feel free to email me at <a href="mailto: nasiddiqui@email.wm.edu">nasiddiqui@email.wm.edu.</a></p>
+			</div>
+		</div>
+		<!-- Copyright -->
+		<section class="copyright py-4 text-center text-black">
+			<small>Copyright &copy; Nabeel Siddiqui 2019</small>
+		</section>
+	</div>
+	<!--Navigation Bar Script and Dependencies-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			$("#nav-placeholder").load("/nav.html");
+		});
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!-- General HTML Setup -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Website Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Nabeel Siddiqui</title>
+  <!-- Bootstrap and Custom CSS -->
+  <script src="/art/p5.js"></script>
+  <script src="/art/p5.sound.js"></script>
+    <script src="/art/sketch.js"></script>
+
+  <link href="/assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body id="home-top">
+  <div class="container-fluid p-0">
+    <!-- Navigation Bar -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Page Title -->
+    <h4 class="text-center text-uppercase mb-5 pageTitle animated slideInDown">Portfolio</h4>
+  </div>
+  <!-- Sketch Script-->
+   <div id="sketch-holder">
+      <!-- Our sketch will go here! -->
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center mb-3">
+          <h3>Overview </h3>
+        </div>
+        <p>On June 16, 2015, Donal Trump descended from an escalator inside of Manhattan’s Trump Tower. Overlooking a group of supporters and journalists, he mentioned his intention to run as a Republican candidate for the 2018 presidential election. A few minutes into his speech, he expressed his desire to curtail illegal immigration at the Mexican-American border and reclaim America’s political dominance:</p>
+        <blockquote>
+          <p>“When Mexico sends its people, they’re not sending their best; they’re not sending you,” Trump said, “They’re sending people that have lots of problems, and they’re bringing those problems with us. They’re bringing drugs. They’re bringing crime. They’re rapists. And some, I assume, are good people.”</p>
+        </blockquote>
+        <p>This project juxtaposes Trumps rhetoric around Mexico and its immigrants with images of migrants held at border camps. As the user drags their mouse or moves their finger, a random selection of insults that Trump has said about immigrants get formulated on the images in black. As these words are drawn, the viewer covers up the image of the migrants with Trump’s words highlighting our collective complicity in the human rights violations at the border. The insults are randomly selected from a bank of insults located <a href="https://time.com/4473972/donald-trump-mexico-meeting-insult/">here</a> along with the statement “And some, I assume, are good people.” In most cases, the statement is not chosen before the user has covered up the images demonstrating the asymmetrical nature of Trump’s insults with his statement that “some…are good people.” Consequently, after seven insults, the images clear on their own to write the statement.</p>
+        <p>Photographs of these camps remain rare, but the ones that I have been able to find show harsh and brutal living conditions. Camps are often overcrowded with individuals and families are commonly split. Please note, these images are not mine. They are the collective effort of a group of journalists, photographers, artists, and government employees listed below, and I encourage you to look at these articles for more information regarding detainment :</p>
+        <ul>
+          <li><a href="https://www.chron.com/news/houston-texas/houston/article/Photos-show-logjam-of-immigrants-detained-at-5544928.php#photo-6434554">Photos show logjam of immigrants detained at government facility - Houston Chronicle</a>
+          </li>
+          <li><a href="https://qz.com/1291470/photos-immigrant-children-detained-at-the-placement-center-in-2014/">Those photos of immigrant children “caged” by the US are from 2014 — Quartz</a>
+          </li>
+          <li><a href="https://www.thedailybeast.com/shocking-new-photos-hundreds-of-migrants-crammed-into-border-facility">Federal Inspectors Release Photos to Blast DHS for ‘Dangerous’ Overcrowding at Border Facilities</a>
+          </li>
+          <li><a href="https://www.buzzfeednews.com/article/hamedaleaziz/photos-overcrowding-immigration-border-facilities">Photos Show Severe Overcrowding At Border Patrol Facilities In The Rio Grande Valley</a>
+          </li>
+          <li><a href="https://www.texastribune.org/2019/07/12/mcallen-texas-migrant-processing-center-packed-migrants-photos-show/">McAllen, Texas migrant processing center packed with migrants, photos show | The Texas Tribune</a>
+          </li>
+          <li><a href="https://www.reuters.com/news/picture/us-border-patrol-migrant-camp-from-above-idUSRTS2HV7C">U.S. Border Patrol migrant camp from above | Reuters.com</a>
+          </li>
+        </ul>
+        <p>Should you be moved by this piece, please consider donating to <a href="https://www.freedomforimmigrants.org">Freedom for Immigrants</a> or <a href="https://supportkind.org">Kids in Need of Defense</a>.</p>
+        <div class="text-center mb-3">
+          <h3>Technical specifications </h3>
+        </div>
+        <p>This project was created using the p5.js library. Images were converted from their native format using <a href="https://photobulkeditor.com">PhotoBulk</a>. The code for the placement of text was adapted from an example in the book <a href="http://www.generative-gestaltung.de/2/sketches/?01_P/P_2_3_3_01">Generative Design.</a> I highly recommend it to anyone interested in generative art.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!--Navigation Bar Script and Dependencies-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      $("#nav-placeholder").load("/nav.html");
+    });
+
+  </script>
+</body>
+
+</html>
